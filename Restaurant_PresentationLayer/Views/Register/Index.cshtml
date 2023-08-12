@@ -1,0 +1,79 @@
+﻿@model RegisterViewModel
+
+
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Register</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+          content="Report Login Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- //Meta tag Keywords -->
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="~/Report-Login-Free/css/style.css" type="text/css" media="all" />
+    <!--//Style-CSS -->
+
+    <link rel="stylesheet" href="~/Report-Login-Free/css/font-awesome.min.css" type="text/css" media="all">
+
+</head>
+
+<body>
+
+    <!-- form section start -->
+    <section class="w3l-hotair-form">
+        <h1>Üye Ol Sayfası</h1>
+        <div class="container">
+            <!-- /form -->
+            <div class="workinghny-form-grid">
+                <div class="main-hotair">
+                    <div class="content-wthree">
+                        <h2>Üye Ol</h2>
+                        <form method="post">
+                            <div class="container">
+                                <label>Adınız</label>
+                                <input type="text" class="form-control" asp-for="Name" />
+                                <label>Soyadınız</label>
+                                <input type="text" class="form-control" asp-for="SurName" />
+                                <label>Kullanıcı Adı</label>
+                                <input type="text" class="form-control" asp-for="UserName" />
+                                <label>Email</label>
+                                <input type="email" class="form-control" asp-for="Email" />
+                                <label>Şehir</label>
+                                <input type="text" class="form-control" asp-for="City" />
+                                <label>Şifreniz</label>
+                                <input type="password" class="form-control" asp-for="Password" />
+                                <label>Şifre Tekrar</label>
+                                <input type="password" class="form-control" asp-for="ConfirmPassword" />
+                                <button class="btn btn-primary">Kayıt Ol</button>
+                                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                            </div>
+                        </form>
+
+                        <p class="account">Zaten hesabın var mı? <a href="/Login/Index">Giriş Yap</a></p>
+                    </div>
+                    <div class="w3l_form align-self">
+                        <div class="left_grid_info">
+                            <img src="~/Report-Login-Free/images/undraw_Work_time_re_hdyv.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //form -->
+        </div>
+    </section>
+    <!-- //form section start -->
+</body>
+
+</html>

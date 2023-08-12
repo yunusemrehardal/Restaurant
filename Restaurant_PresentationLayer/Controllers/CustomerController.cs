@@ -15,7 +15,7 @@ namespace Restaurant_PresentationLayer.Controllers
         public IActionResult Index()
         {
             var values = _contactService.TGetList();
-            return View();
+            return View(values);
         }
     }
 }
