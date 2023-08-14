@@ -1,0 +1,12 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Restaurant_PresentationLayer.ViewComponents.Default
+{
+    public class _AboutPartial :ViewComponent
+    {
+        public IViewComponentResult Invoke()
+        {
+            return View();
+        }
+    }
+}
